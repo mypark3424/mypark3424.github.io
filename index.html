@@ -7,19 +7,16 @@
     <title>Junghyun Park | Camera Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Junghyun Park home">JP<span>.</span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Toggle navigation</span>
-        <span aria-hidden="true">Menu</span>
+        <span class="sr-only">Toggle navigation</span><span aria-hidden="true">Menu</span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#games">Games</a>
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#games">Games</a><a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -33,39 +30,42 @@
 
       <section id="about" class="section intro" aria-labelledby="about-title">
         <p class="section-label">01 / Profile</p>
-        <div>
-          <h2 id="about-title">From algorithm design to mass production.</h2>
-          <p>Junghyun Park is a camera software engineer with 10+ years of experience across computational photography, AI ISP, Camera HAL integration, and imaging quality optimization.</p>
-        </div>
+        <div><h2 id="about-title">From algorithm design to mass production.</h2><p>Junghyun Park is a Senior Camera Software Engineer at Samsung Electronics, Mobile eXperience (MX) Division, with 10+ years of experience as described in the supplied CV. Current employment status and public wording: <strong>[사람 확인 필요]</strong>.</p></div>
       </section>
 
       <section id="experience" class="section" aria-labelledby="experience-title">
-        <p class="section-label">02 / Selected experience</p>
-        <h2 id="experience-title">Imaging systems, end to end.</h2>
-        <div class="cards">
+        <p class="section-label">02 / Experience</p>
+        <div><h2 id="experience-title">Imaging systems, end to end.</h2><div class="cards">
           <article class="card"><span>01</span><h3>AI ISP &amp; 24MP Imaging</h3><p>Algorithm design, implementation, image quality optimization, and commercialization for Galaxy imaging.</p></article>
-          <article class="card"><span>02</span><h3>Space Zoom</h3><p>End-to-end development of Tetra Space Zoom and lossless zoom imaging experiences.</p></article>
-          <article class="card"><span>03</span><h3>Camera Foundations</h3><p>HDR, VDIS, Hyperlapse, Camera HAL integration, Hi-Fi Video, and EDOF development.</p></article>
+          <article class="card"><span>02</span><h3>Tetra Space Zoom</h3><p>End-to-end development of Tetra Space Zoom and Tetra Lossless Zoom for Galaxy S24 Ultra/S25 Ultra, with three A2 patent applications noted in the CV. Patent details: <strong>[사람 확인 필요]</strong>.</p></article>
+          <article class="card"><span>03</span><h3>Camera Foundations</h3><p>HDR, VDIS, Hyperlapse, Camera HAL integration, Hi-Fi Video, EDOF, and ultra-wide distortion correction.</p></article>
+        </div></div>
+      </section>
+
+      <section id="research" class="section research-section" aria-labelledby="research-title">
+        <p class="section-label">03 / Research &amp; toolkit</p>
+        <div><h2 id="research-title">The stack behind the image.</h2><p>M.S. in Computer Science from Sungkyunkwan University. Research: AI-based Low-light Image Enhancement. Graduation year and official degree wording: <strong>[사람 확인 필요]</strong>.</p><p class="skill-list">C++ · C · Python · Camera HAL · ISP Pipeline · AI ISP · HDR · Zoom Imaging · Android Camera Framework</p></div>
+      </section>
+
+      <section id="games" class="section game-section" aria-labelledby="games-title">
+        <p class="section-label">04 / Play</p>
+        <div><h2 id="games-title">Signal Snake</h2><p>A portfolio mini-game inspired by camera signals. Collect imaging cells, grow the signal chain, and avoid collisions.</p>
+          <div class="game-shell" data-game-root>
+            <div class="game-toolbar"><p class="game-status" data-game-status role="status">Ready to calibrate.</p><div class="scoreboard"><span>Score <strong data-score>0</strong></span><span>Best <strong data-best>0</strong></span></div></div>
+            <canvas class="game-board" data-game-board width="480" height="360" aria-label="Signal Snake game board" role="img"></canvas>
+            <div class="game-actions"><button class="button button-small" type="button" data-game-start>Start game</button><button class="button button-small button-muted" type="button" data-game-pause disabled>Pause</button><button class="button button-small button-muted" type="button" data-game-restart>Restart</button></div>
+            <div class="touch-controls" aria-label="Touch game controls"><button type="button" data-direction="up" aria-label="Move up">↑</button><button type="button" data-direction="left" aria-label="Move left">←</button><button type="button" data-direction="down" aria-label="Move down">↓</button><button type="button" data-direction="right" aria-label="Move right">→</button></div>
+            <p class="game-help">Use arrow keys or WASD. Swipe or use the buttons on mobile. HDR, Zoom, and Low-light cells add imaging-inspired effects.</p>
+          </div>
         </div>
       </section>
 
-      <section id="skills" class="section skill-section" aria-labelledby="skills-title">
-        <p class="section-label">03 / Toolkit</p>
-        <h2 id="skills-title">The stack behind the image.</h2>
-        <p>C++ · C · Python · Camera HAL · ISP Pipeline · AI ISP · HDR · Zoom Imaging · Android Camera Framework</p>
-      </section>
-
-      <section id="games" class="section game-placeholder" aria-labelledby="games-title">
-        <p class="section-label">04 / Play</p>
-        <h2 id="games-title">Signal Snake</h2>
-        <p>A portfolio mini-game is coming soon. Keyboard and touch controls will be supported in a future loop.</p>
-        <p class="status" role="status">Game status: preparation</p>
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <p class="section-label">05 / Contact</p>
+        <div><h2 id="contact-title">Let’s talk about better imaging.</h2><p>Contact details and professional links: <strong>[사람 확인 필요]</strong>.</p></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© Junghyun Park</p>
-      <a href="#home">Back to top ↑</a>
-    </footer>
+    <footer class="site-footer"><p>© Junghyun Park</p><a href="#home">Back to top ↑</a></footer>
   </body>
 </html>
